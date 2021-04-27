@@ -86,6 +86,27 @@ body {
   padding: 10px;
 }
 
+.hero-content {
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.527);
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  height: 13%;
+  width: 0%;
+  opacity: 0;
+  padding: 20px;
+  transition: .5s ease all;
+  cursor: pointer;
+}
+
+.hero-section:hover .hero-content{
+  text-align: right;
+  width: 70%;
+  opacity: 1;
+}
+
 .about-container {
   margin: 0 10px;
 }
@@ -253,7 +274,7 @@ footer {
     width: 100%;
     max-width: 800px;
     padding: 20px;
-    /* transition: .3s ease; */
+    transition: .2s all;
     margin: unset;
     cursor: pointer;
   }
