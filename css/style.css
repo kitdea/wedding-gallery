@@ -13,7 +13,7 @@ body {
 
 /* Header */
 .wedding-header {
-  background-color: black;
+  background-color: white;
   /* z-index: 10; */
 }
 
@@ -21,16 +21,13 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* padding: 10px; */
   margin: 0 auto;
   position: relative;
 }
 
-.kd-logo {
-  padding: 10px;
-}
 .kd-logo img {
-  width: 90px;
+  color: black;
+  width: 100px;
 }
 
 /* .wedding-nav-flex {
@@ -52,7 +49,7 @@ body {
 }
 
 .wedding-nav-flex li a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -128,10 +125,27 @@ body {
   padding: 20px;
 }
 
+footer {
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.logo-ftr img {
+  width: 100%;
+  max-width: 120px;
+  padding: 10px;
+}
+
+.ftr-content {
+  color: white;
+  font-weight: lighter;
+}
+
 @media (min-width: 768px) {
-  .wedding-nav {
+  /* .wedding-nav {
     padding: 10px;
-  }
+  } */
 
   .wedding-nav-flex {
     all: unset;
@@ -147,6 +161,10 @@ body {
 
   .wedding-nav-flex li a {
     font-size: 20px;
+  }
+
+  .wedding-nav-flex li {
+    padding: unset;
   }
 
   .hero-section {
