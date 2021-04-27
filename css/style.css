@@ -92,18 +92,19 @@ body {
   background-color: rgba(0, 0, 0, 0.527);
   position: absolute;
   top: 30%;
-  left: -20%;
-  height: 13%;
+  left: -32%;
+  height: 14%;
   width: 0%;
   opacity: 0;
-  padding: 20px;
+  padding: 30px;
   transition: .5s ease all;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .hero-section:hover .hero-content{
   text-align: right;
-  width: 70%;
+  width: 85%;
   opacity: 1;
 }
 
