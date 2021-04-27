@@ -110,6 +110,24 @@ body {
   padding: 10px;
 }
 
+.grid-box {
+  margin: 0 10px;
+}
+
+.blog-box {
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 20px 0 ;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.content-box {
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   .wedding-nav {
     padding: 10px;
@@ -154,10 +172,10 @@ body {
 
   .grid-mid {
     position: absolute;
-    top: 93.1%;
+    top: 50%;
     left: 50%;
     width: 100%;
-    /* height: 0%; */
+    /* height: 100%; */
     background-color:rgba(0, 0, 0, 0.562);
     opacity: 0;
     transition: .3s ease all;
@@ -165,7 +183,6 @@ body {
   }
 
   .text {
-    /* font-size: 20px; */
     font-weight: 400;
     color: white;
     padding: 16px 32px;
@@ -174,7 +191,7 @@ body {
   }
 
   .grid-img:hover .grid-mid {
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .about-container {
@@ -195,6 +212,40 @@ body {
   }
 
   .groom-content, .bride-content {
-  padding: 10px 10px 0 10px;
-}
+    padding: 10px 10px 0 10px;
+  }
+
+  .blog-container {
+    margin: 100px auto;
+  }
+
+  .grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .blog-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    /* transition: .3s ease; */
+    margin: unset;
+    cursor: pointer;
+  }
+
+  .blog-box:hover {
+    box-shadow: 4px 4px 22px lightgray;
+    border: none;
+  }
+
+  .img-box {
+    max-width: 200px;
+  }
 }
