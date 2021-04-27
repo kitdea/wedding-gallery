@@ -13,12 +13,6 @@ body {
   align-items: center;
 }
 
-.row {
-  /* width: 1100px; */
-  display: flex;
-  flex-direction: ;
-}
-
 .grid-container {
   width: 80%;
   display: grid;
